@@ -5,11 +5,13 @@
     android:id="@+id/b1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:fontFamily="@font/autour_one"
@@ -33,8 +35,8 @@
         app:srcCompat="@drawable/grid" />
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="413dp"
+        android:layout_height="413dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +53,7 @@
                 android:id="@+id/imageView0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:contentDescription="@string/empty"
                 android:maxWidth="100dp"
@@ -178,6 +181,8 @@
         android:tag="resetButton"
         android:text="@string/resetButton"
         android:visibility="invisible"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.503"
@@ -192,6 +197,8 @@
         android:layout_marginEnd="72dp"
         android:tag="exitButton"
         android:text="@string/exitButton"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
